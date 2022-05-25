@@ -26,8 +26,8 @@ jobs:
           DEBIAN_FRONTEND="noninteractive" sudo apt-get -y install tzdata
           pip install wheel
           pip install .
-          # git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
-          # git clone https://github.com/flutter/engine.git
+          git clone https://chromium.googlesource.com/chromium/tools/depot_tools.git
+          git clone https://github.com/flutter/engine.git
       - name: gclient sync
         run: |
           ROOT_DIR=`pwd`
